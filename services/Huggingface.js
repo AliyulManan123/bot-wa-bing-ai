@@ -38,7 +38,7 @@ const processImage = async (imageBuffer) => {
         return JSON.parse(response)
     } catch {
         ws.close()
-        return { msg: 'Error al procesar la respuesta del WebSocket', success: false }
+        return { msg: 'Terjadi kesalahan saat memproses respons WebSocket', success: false }
     }
 }
 
@@ -87,7 +87,7 @@ const processAudio = async (audioBuffer, name) => {
         return JSON.parse(response)
     } catch {
         ws.close()
-        return { msg: 'Error al procesar la respuesta del WebSocket', success: false }
+        return { msg: 'Terjadi kesalahan saat memproses respons WebSocket', success: false }
     }
 }
 
