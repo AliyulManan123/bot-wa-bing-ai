@@ -75,7 +75,7 @@ const parseLinksWithText = (text) => {
 const timeout = (ms) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            reject(new Error('Tiempo de espera excedido'))
+            reject(new Error('Waktu tunggu terlampaui'))
         }, ms)
     })
 }
