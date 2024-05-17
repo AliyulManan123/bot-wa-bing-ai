@@ -106,7 +106,7 @@ const flowBotWelcome = addKeyword(EVENTS.WELCOME).addAction(
 
         if (isImage(ctx)) {
             if (process.env.BOT_RECONGNIZE_IMAGE === 'true') {
-                messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🔍🖼️⏳💭' }, { quoted: ctx })
+                messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🤔Berpikir...' }, { quoted: ctx })
                 await simulateEndPause(ctx, provider)
                 await simulateTyping(ctx, provider)
                 const buffer = await downloadMediaMessage(ctx, 'buffer')
@@ -123,7 +123,7 @@ const flowBotWelcome = addKeyword(EVENTS.WELCOME).addAction(
         if (isPdf(ctx)) {
             if (process.env.BOT_RECONGNIZE_PDF === 'true') {
                 isPdfConversation = true
-                messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🔍📄⏳💭' }, { quoted: ctx })
+                messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🤔Berpikir...' }, { quoted: ctx })
                 await simulateEndPause(ctx, provider)
                 await simulateTyping(ctx, provider)
                 const buffer = await downloadMediaMessage(ctx, 'buffer')
@@ -145,7 +145,7 @@ const flowBotWelcome = addKeyword(EVENTS.WELCOME).addAction(
 
         if (isPdfWithCaption(ctx)) {
             if (process.env.BOT_RECONGNIZE_PDF === 'true') {
-                messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🔍📄⏳💭' }, { quoted: ctx })
+                messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🤔Berpikir...' }, { quoted: ctx })
                 await simulateEndPause(ctx, provider)
                 await simulateTyping(ctx, provider)
                 const buffer = await downloadMediaMessage(ctx, 'buffer')
@@ -164,7 +164,7 @@ const flowBotWelcome = addKeyword(EVENTS.WELCOME).addAction(
         }
 
         if (messageBot === null) {
-            messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🔍⏳💭' }, { quoted: ctx })
+            messageBot = await provider.vendor.sendMessage(ctx?.key?.remoteJid, { text: '🤔Berpikir...' }, { quoted: ctx })
          }
 
         // Restart conversation fr, es, en, zh, it, pr

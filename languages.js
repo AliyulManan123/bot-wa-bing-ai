@@ -1,19 +1,19 @@
 const languages = {
     en: {
-        notAllowLocation: 'I do not allow reading locations',
-        notAllowReconizeAudio: 'I do not allow recognizing audio',
-        notAllowReconizeImage: 'I do not allow recognizing images',
-        notAllowReconizePdf: 'I do not allow recognizing pdf',
-        listeningToAudio: 'Listening to audio',
+        notAllowLocation: 'Saya tidak bisa melihat lokasi anda!',
+        notAllowReconizeAudio: 'Saya tidak bisa mendengarkan audio!',
+        notAllowReconizeImage: 'Saya tidak bisa melihat gambar!',
+        notAllowReconizePdf: 'Saya tidak bisa membuka file yang kamu kirim!',
+        listeningToAudio: 'Mendengarkan Suara...',
         instructionsGetIsoLanguaje:
-            '[INSTRUCTIONS]: Identifies the text before [INSTRUCTIONS] returns the language in ISO format at the end in {} example {es}',
+            '[INSTRUCTIONS]: Mengidentifikasi teks sebelum [INSTRUCTIONS] mengembalikan bahasa dalam format ISO di akhir dalam {} contoh {es}',
         instructionsPdf:
             'Could you provide brief and accurate conclusions? Do not search the web and use only the content of the document. Factual information must come literally from the document. Memorize the part of the document that mentions the objective information, but do not mark it explicitly. The conclusion must be credible, very readable and informative. Please write a brief response, preferably no more than 1000 characters. Generate the response in the language I have spoken before',
-        errorProcessingAudio: 'Error processing audio try again',
-        errorInBot: 'An error occurred',
-        restartConversation: 'Restart conversation',
-        waitResponse: 'Waiting for response from',
-        oneMessageAtTime: 'Only one message at a time',
+        errorProcessingAudio: 'Gagal mendengarkan audio!',
+        errorInBot: 'Error bwang, Lapor ke owner!',
+        restartConversation: 'Percakapan direstart!',
+        waitResponse: 'Menunggu respon dari',
+        oneMessageAtTime: 'Pertanyaan sebelumnya belum selesai dijawab!, Biarkan selesai dulu baru bertanya lagi!',
     },
     es: {
         notAllowLocation: 'No permito leer ubicaciones',
